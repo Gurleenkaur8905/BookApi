@@ -1,5 +1,5 @@
 <h1 align="center"> BookApi </h1>
-<h5 align="center">Empowering Access to Extensive Literary Collections</h5>
+<h5 align="center"><i>Empowering Access to Extensive Literary Collections</i></h5>
 BookAPI serves as a unified interface for fetching data from various APIs, integrating them seamlessly to deliver enhanced results.
 
 ## Features
