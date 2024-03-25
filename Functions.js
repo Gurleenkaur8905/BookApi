@@ -143,77 +143,6 @@ exports.amazonbook = async (req) => {
 }
 
 
-// exports.pdfLink = async (req) => {
-//     var options = {
-//         host: "google.fr",
-//         qs: {
-//             q: req,
-//             filter: 0,
-//             pws: 0
-//         },
-//         num: 100
-//     };
-//     console.log("step 1");
-
-//     const links = await serp.search(options);
-//     var arr = [];
-//     links.forEach(element => {
-//         if (element.url.endsWith(".pdf")) {
-//             arr.push(element.url);
-//         }
-//     });
-
-//     console.log("step 2");
-
-//     if (Array.isArray(arr) && arr.length === 0) {
-//         try {
-//             const products = await amazonScraper.products({ keyword: req, number: 10, country: 'IN' });
-//             const productUrl = products?.result?.[0]?.url;
-
-//             if (productUrl) {
-//                 // console.log(productUrl);
-//                 return productUrl;
-//             } else {
-//                 return "Default URL";
-//             }
-//         } catch (error) {
-//             console.log(error);
-//         }
-//     }
-
-//     return arr;
-// let query = req.split(" ").slice(0, -4);
-// // let arr2 = [];
-
-// console.log("step 3");
-// // Use Promise.all() and map() to perform HEAD requests in parallel
-// const validatedLinks = await axios.all(
-//     arr.map(async (pdfLink) => {
-//         let linkName = pdfLink.toLowerCase();
-//         if (query.some(word => linkName.includes(word.toLowerCase()))) {
-//             try {
-//                 const response = await axios.head(pdfLink);
-//                 if (response.status >= 200 && response.status < 300) {
-//                     return pdfLink; // Resolves with the valid link
-//                 }
-//             } catch (error) {
-//                 // Handle specific errors if needed
-//             }
-//         }
-//         return null; // Resolves with null for invalid links
-//     })
-// );
-
-// // Filter out null values (invalid links) using Array.filter()
-// const arr2 = validatedLinks.filter(link => link !== null);
-
-// console.log("Valid PDF Links:", arr2);
-// return arr2;
-// };
-
-
-
-// googlesearch("Engineering mathematics filetype pdf doctype pdf");
 
 
 
@@ -224,4 +153,4 @@ exports.amazonbook = async (req) => {
 //amazon-buddy --> for searching on amazon for paid books and the books which are not available freely
 
 //Searching ---> book name , author name , thumbnail, api type
-//one Book --> pushblished, price, isbn , page,  rating , pending
+//Book --> pushblished, price, isbn , page,  rating , pending
