@@ -4,7 +4,7 @@ BookAPI serves as a unified interface for fetching data from various APIs, integ
 
 ## Features
 
-* Facilitates download links for books.
+* Facilitates download links for ebooks.
 * Offers direct access to read books online.
 * Provides comprehensive details including title, author, book cover image, language, and unique identifier, along with API categorization.
 * Utilizes the Mongoose library for efficient data management.
