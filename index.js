@@ -7,11 +7,9 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
+    //fs -->send html in responses
     res.sendStatus(404);
 });
-app.get("/getinfo", (req, res) => {
-    // getinfo();
-})
 app.get("/search", async (req, res) => {
     if (req.query.q) {
         try {
